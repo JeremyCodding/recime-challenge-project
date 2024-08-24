@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Bulgarian Burger",
+    "difficulty": "easy",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 1
+  },
+  {
+    "title": "Gourmet Burger with Truffle Fries",
+    "difficulty": "hard",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 2
+  },
+  {
+    "title": "Veggie Burger with Avocado Spread",
+    "difficulty": "medium",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 3
+  },
+  {
+    "title": "Shrimp Burger with Jalapeño Peppers",
+    "difficulty": "hard",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 4
+  },
+  {
+    "title": "Yakissoba Burger with Chicken",
+    "difficulty": "hard",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 5
+  },
+  {
+    "title": "Simple Burger",
+    "difficulty": "easy",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 6
+  },
+  {
+    "title": "Simple Cheese Burger",
+    "difficulty": "easy",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 7
+  },
+  {
+    "title": "Ribs Burger with Cheddar and Barbecue Sauce",
+    "difficulty": "medium",
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "id": 8
+  }
+]
