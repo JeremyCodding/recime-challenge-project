@@ -7,7 +7,7 @@ export const HeaderComponent = (props: { pageTitle: string }) => {
   const { pageTitle } = props;
   return (
     <header className={styles.headerComponent}>
-      <Container>
+      <Container isPageTitle={true}>
         <h1>{pageTitle}</h1>
       </Container>
     </header>

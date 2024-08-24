@@ -3,96 +3,112 @@
     "title": "Bulgarian Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 1
+    "id": 1,
+    "position": 1
   },
   {
-    "title": "Gourmet Burger with Truffle Fries",
+    "title": "Gourmet Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 2
+    "id": 2,
+    "position": 2
   },
   {
-    "title": "Veggie Burger with Avocado Spread",
+    "title": "Veggie Burger",
     "difficulty": "medium",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 3
+    "id": 3,
+    "position": 3
   },
   {
-    "title": "Shrimp Burger with Jalapeño Peppers",
+    "title": "Shrimp Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 4
+    "id": 4,
+    "position": 4
   },
   {
-    "title": "Yakissoba Burger with Chicken",
+    "title": "Yakissoba Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 5
+    "id": 5,
+    "position": 5
   },
   {
     "title": "Simple Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 6
+    "id": 6,
+    "position": 6
   },
   {
-    "title": "Simple Cheese Burger",
+    "title": "Simple X-Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 7
+    "id": 7,
+    "position": 7
   },
   {
-    "title": "Ribs Burger with Cheddar and Barbecue Sauce",
+    "title": "Ribs Burger",
     "difficulty": "medium",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 8
+    "id": 8,
+    "position": 8
   },
   {
     "title": "Bulgarian Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 9
+    "id": 9,
+    "position": 9
   },
   {
-    "title": "Gourmet Burger with Truffle Fries",
+    "title": "Gourmet Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 10
+    "id": 10,
+    "position": 10
   },
   {
-    "title": "Veggie Burger with Avocado Spread",
+    "title": "Veggie Burger",
     "difficulty": "medium",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 11
+    "id": 11,
+    "position": 11
   },
   {
-    "title": "Shrimp Burger with Jalapeño Peppers",
+    "title": "Shrimp Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 12
+    "id": 12,
+    "position": 12
   },
   {
-    "title": "Yakissoba Burger with Chicken",
+    "title": "Yakissoba Burger",
     "difficulty": "hard",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 13
+    "id": 13,
+    "position": 13
   },
   {
     "title": "Simple Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 14
+    "id": 14,
+    "position": 14
   },
   {
     "title": "Simple Cheese Burger",
     "difficulty": "easy",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 15
+    "id": 15,
+    "position": 15
   },
   {
-    "title": "Ribs Burger with Cheddar and Barbecue Sauce",
+    "title": "Ribs Burger",
     "difficulty": "medium",
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
-    "id": 16
+    "id": 16,
+    "position": 16
   }
 ]

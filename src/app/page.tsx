@@ -1,14 +1,12 @@
+import { IRecipeItem } from "@/types/recipes";
 import recipes from "../../data.json";
-import { RecipeItem } from "@/components";
+import { RecipeGrid, RecipeItem } from "@/components";
+import { RecipeBoard } from "@/components/RecipeBoard";
 
-export default function Home(params: any[]) {
+export default function Home() {
   return (
     <main>
-      <section className="card-list">
-        {recipes.map((recipe) => (
-          <RecipeItem key={recipe.id} recipe={recipe} />
-        ))}
-      </section>
+      <RecipeBoard recipes={recipes as IRecipeItem[]} />
     </main>
   );
 }

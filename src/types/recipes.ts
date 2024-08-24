@@ -1,6 +1,6 @@
 export interface IRecipeItem {
   title: string;
-  difficulty: string;
+  difficulty: "easy" | "medium" | "hard";
   imageUrl: string;
   id: number;
 }

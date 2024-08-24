@@ -1,8 +1,8 @@
 .recipeCard {
   border: 1px solid;
+  background-color: #fff;
   border-radius: 12px;
-  width: 100px;
-  font-size: 12px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -10,30 +10,51 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: start;
+  transition: all 0.2s ease-in-out;
+}
+
+.recipeCard:hover:nth-child(odd) {
+  border-radius: 8px;
+  transform: rotate(5deg) scale(1.05);
+}
+
+.recipeCard:hover:nth-child(even) {
+  border-radius: 8px;
+  transform: rotate(-5deg);
 }
 
 .easy {
-  border-color: #050505;
+  border-color: rgb(5, 5, 5);
   color: #050505;
 }
+
+.easy:hover {
+  box-shadow: 0 0 8px 4px rgb(5, 5, 5);
+}
+
 .medium {
   border-color: #2478ff;
   color: #2478ff;
 }
+.medium:hover {
+  box-shadow: 0 0 8px 4px rgb(36, 120, 255);
+}
+
 .hard {
   border-color: #ff0000;
   color: #ff0000;
+}
+.hard:hover {
+  box-shadow: 0 0 8px 4px rgb(255, 0, 0);
 }
 
 .image {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   object-fit: cover;
-  width: 100px;
-}
-
-.image img {
-  object-fit: cover;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .title {
@@ -43,5 +64,13 @@
 }
 
 .text {
-  padding: 4px;
+  padding: 8px 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.difficulty {
+  color: #a3a3a3;
 }
