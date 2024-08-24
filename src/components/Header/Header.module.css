@@ -1,0 +1,9 @@
+.headerComponent {
+  width: 100%;
+  padding: 24px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 120px;
+}

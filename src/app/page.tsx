@@ -1,22 +1,14 @@
-import Image from "next/image";
 import recipes from "../../data.json";
+import { RecipeItem } from "@/components";
 
 export default function Home(params: any[]) {
   return (
     <main>
-      <ul>
+      <section className="card-list">
         {recipes.map((recipe) => (
-          <li key={recipe.id}>
-            {recipe.title}
-            <Image
-              src={recipe.imageUrl}
-              alt="Burget Image"
-              width={300}
-              height={300}
-            />
-          </li>
+          <RecipeItem key={recipe.id} recipe={recipe} />
         ))}
-      </ul>
+      </section>
     </main>
   );
 }

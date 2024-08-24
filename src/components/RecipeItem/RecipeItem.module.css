@@ -1,0 +1,47 @@
+.recipeCard {
+  border: 1px solid;
+  border-radius: 12px;
+  width: 100px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+}
+
+.easy {
+  border-color: #050505;
+  color: #050505;
+}
+.medium {
+  border-color: #2478ff;
+  color: #2478ff;
+}
+.hard {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  width: 100px;
+}
+
+.image img {
+  object-fit: cover;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text {
+  padding: 4px;
+}
