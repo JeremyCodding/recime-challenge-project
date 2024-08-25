@@ -4,7 +4,7 @@ import { IRecipeItem } from "@/types/recipes";
 import { Container } from "../Container";
 import { RecipeGrid } from "../RecipeGrid";
 import { RecipeItem } from "../RecipeItem";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonGroup, StyledButton } from "./modules";
 
 export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
@@ -12,12 +12,27 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
   const [difficulty, setDifficulty] = useState<
     "easy" | "medium" | "hard" | undefined
   >();
+  const [recipesList, setRecipesList] = useState<IRecipeItem[]>(recipes);
 
-  const filteredRecipes = recipes
-    .filter((recipe) =>
-      difficulty ? recipe.difficulty === difficulty : recipe
-    )
-    .sort((a, b) => a.position - b.position);
+  useEffect(() => {
+    function orderList(recipes: IRecipeItem[]) {
+      const filteredRecipes = recipes
+        .filter((recipe) =>
+          difficulty ? recipe.difficulty === difficulty : recipe
+        )
+        .sort((a, b) => a.position - b.position)
+        .concat([
+          ...recipes
+            .filter((recipe) =>
+              difficulty ? recipe.difficulty !== difficulty : recipe
+            )
+            .sort((a, b) => a.position - b.position),
+        ]);
+
+      return filteredRecipes;
+    }
+    setRecipesList(() => orderList(recipes));
+  }, [recipes, difficulty]);
 
   const handleFilterDifficulty = (value: "easy" | "medium" | "hard") => {
     if (difficulty === value) {
@@ -55,7 +70,7 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
       </ButtonGroup>
 
       <RecipeGrid>
-        {(filteredRecipes as IRecipeItem[]).map((recipe) => (
+        {recipesList.map((recipe) => (
           <RecipeItem key={recipe.id} recipe={recipe} />
         ))}
       </RecipeGrid>
