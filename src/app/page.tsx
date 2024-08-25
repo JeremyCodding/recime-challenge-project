@@ -1,7 +1,6 @@
-import { IRecipeItem } from "@/types/recipes";
+import { IRecipeItem } from "@/types";
 import recipes from "../../data.json";
-import { RecipeGrid, RecipeItem } from "@/components";
-import { RecipeBoard } from "@/components/RecipeBoard";
+import { RecipeBoard } from "@/components";
 
 export default function Home() {
   return (

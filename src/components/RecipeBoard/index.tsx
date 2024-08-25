@@ -13,9 +13,11 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
     "easy" | "medium" | "hard" | undefined
   >();
 
-  const filteredRecipes = recipes.filter((recipe) =>
-    difficulty ? recipe.difficulty === difficulty : recipe
-  );
+  const filteredRecipes = recipes
+    .filter((recipe) =>
+      difficulty ? recipe.difficulty === difficulty : recipe
+    )
+    .sort((a, b) => a.position - b.position);
 
   const handleFilterDifficulty = (value: "easy" | "medium" | "hard") => {
     if (difficulty === value) {
@@ -29,8 +31,8 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
   return (
     <Container>
       <h1>Trending Recipes</h1>
-      <p>Difficulty</p>
-      <p>You can filter recipes by difficulty</p>
+      <p className="subtitle">Difficulty</p>
+      <p className="auxiliar-text">You can filter recipes by difficulty</p>
       <ButtonGroup>
         <StyledButton
           onClick={() => handleFilterDifficulty("easy")}
@@ -51,6 +53,7 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
           Hard
         </StyledButton>
       </ButtonGroup>
+
       <RecipeGrid>
         {(filteredRecipes as IRecipeItem[]).map((recipe) => (
           <RecipeItem key={recipe.id} recipe={recipe} />

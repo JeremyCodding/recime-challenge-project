@@ -10,7 +10,7 @@ export const RecipeItem = (props: { recipe: IRecipeItem }) => {
   const { id, imageUrl, title, difficulty } = props.recipe;
 
   return (
-    <RecipeCard difficulty={difficulty}>
+    <RecipeCard $difficulty={difficulty}>
       <ImageContainer>
         <Image
           src={imageUrl}

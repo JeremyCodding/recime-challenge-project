@@ -3,4 +3,5 @@ export interface IRecipeItem {
   difficulty: "easy" | "medium" | "hard";
   imageUrl: string;
   id: number;
+  position: number;
 }

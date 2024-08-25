@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 interface RecipeCardProps {
-  difficulty: "easy" | "medium" | "hard";
+  $difficulty: "easy" | "medium" | "hard";
 }
 
 export const RecipeCard = styled.div<RecipeCardProps>`
   border: 1px solid;
-  border-color: ${({ difficulty }) =>
-    difficulty === "hard"
+  border-color: ${({ $difficulty }) =>
+    $difficulty === "hard"
       ? "#ff0000"
-      : difficulty === "medium"
+      : $difficulty === "medium"
       ? "#2478ff"
       : "#050505"};
-  color: ${({ difficulty }) =>
-    difficulty === "hard"
+  color: ${({ $difficulty }) =>
+    $difficulty === "hard"
       ? "#ff0000"
-      : difficulty === "medium"
+      : $difficulty === "medium"
       ? "#2478ff"
       : "#050505"};
   background-color: #fff;
@@ -31,10 +31,10 @@ export const RecipeCard = styled.div<RecipeCardProps>`
 
   &:hover {
     box-shadow: 0 0 8px 4px
-      ${({ difficulty }) =>
-        difficulty === "hard"
+      ${({ $difficulty }) =>
+        $difficulty === "hard"
           ? "#ff0000"
-          : difficulty === "medium"
+          : $difficulty === "medium"
           ? "#2478ff"
           : "#050505"};
   }
