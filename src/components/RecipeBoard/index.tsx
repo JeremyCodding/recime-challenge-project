@@ -20,17 +20,16 @@ export const RecipeBoard = (props: { recipes: IRecipeItem[] }) => {
         .filter((recipe) =>
           difficulty ? recipe.difficulty === difficulty : recipe
         )
-        .sort((a, b) => a.position - b.position)
-        .concat([
-          ...recipes
-            .filter((recipe) =>
-              difficulty ? recipe.difficulty !== difficulty : recipe
-            )
-            .sort((a, b) => a.position - b.position),
-        ]);
+        .sort((a, b) => a.position - b.position);
+      const restList = [
+        ...recipes.filter((recipe) =>
+          difficulty ? recipe.difficulty !== difficulty : recipe
+        ),
+      ];
 
-      return filteredRecipes;
+      return filteredRecipes.concat(difficulty ? restList : []);
     }
+
     setRecipesList(() => orderList(recipes));
   }, [recipes, difficulty]);
 
